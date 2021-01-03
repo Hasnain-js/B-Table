@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Table </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/b7fe562a69.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      td{
+        text-align: center;
+      }
+      th{
+        text-align: center;
+      }
+     
+    </style>
+  
+  
+  </head>
+  <body>
+    <div class="container-fluid ">
+        <div class="container-fluid p-3 my-3 bg-dark text-white">
+            <h1  class="display-4" style="display: inline-block;padding-right: 700px;">Order <b>Details</b> </h1>
+                       
+                <div style="display: inline-block ;">
+                        <button class="btn btn-light" type="button" >Export to Excel</button>
+                        <button class="btn btn-primary" type="button">Reset List</button>
+                </div>
+            
+        </div>
+
+        <div class="container-fluid">
+            <span style="padding-right: 250px;">Show<select id="my-select" class="form-control" name="" style="width: 60px; display: inline;"></select> entries</span>
+            
+            <span>
+              <i class="fas fa-filter"></i> &nbsp Status &nbsp <select id="my-select" class="form-control" name="" style="width: 100px; display: inline;"></select> 
+            </span>
+
+              <span>   
+                 &nbsp &nbsp location  &nbsp <select id="my-select" class="form-control" name="" style="width: 100px; display: inline;"></select>
+            </span>
+            
+            <span>
+              Name: &nbsp <input class="form-control" type="text" name="" style="display: inline; width: 400px;" > <button type="button" name="" id="" class="btn btn-primary" style="    margin-bottom: 4.1px;" ><i class="fas fa-search"></i></button> 
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <table class="table table-light">
+        <thead class="thead-light">
+          <tr>
+            <th>#</th>
+            <th>CUSTOMER</th>
+            <th>LOCATION</th>
+            <th>ORDER DATE</th>
+            <th>STATUS</th>
+            <th>NET AMOUNT</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Hasnain</td>
+            <td>London</td>
+            <td>Jul 5 2012</td>
+            <td><i class="fas fa-dot-circle" style="color: lightgreen; font-size: 10px;"></i> Delivered</td>
+            <td>$356</td>
+            <td class="action" style="color: rgb(0, 153, 255);font-size: 30px;"><i class="fas fa-arrow-circle-right"></i></td>
+          </tr>
+  
+          <tr>
+            <td>2</td>
+            <td>Fahad</td>
+            <td>Paris</td>
+            <td>Jul 4 2016</td>
+            <td><i class="fas fa-dot-circle" style="color: rgb(36, 161, 211); font-size: 10px;"></i> Shipped</td>
+            <td>$3563</td>
+            <td class="action" style="color:  rgb(0, 153, 255);font-size: 30px;"><i class="fas fa-arrow-circle-right"></i></td>
+          </tr>
+  
+          <tr>
+            <td>3</td>
+            <td>Yasir</td>
+            <td>Pakistan</td>
+            <td>Jul 4 2016</td>
+            <td><i class="fas fa-dot-circle" style="color: red; font-size: 10px;"></i> Cancelled</td>
+            <td>$3563</td>
+            <td class="action" style="color: rgb(0, 153, 255);font-size: 30px;"><i class="fas fa-arrow-circle-right"></i></td>
+          </tr>
+  
+          <tr>
+            <td>4</td>
+            <td>Hammas</td>
+            <td>Pakistan</td>
+            <td>Jul 4 2016</td>
+            <td><i class="fas fa-dot-circle" style="color: orange; font-size: 10px;"></i> Panding</td>
+            <td>$3563</td>
+            <td class="action" style="color: rgb(0, 153, 255);font-size: 30px;"><i class="fas fa-arrow-circle-right"></i></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Karachi</td>
+            <td>Punjab</td>
+            <td>Jul 4 2018</td>
+            <td><i class="fas fa-dot-circle" style="color:lightgreen;  font-size: 10px;"></i> Delivered</td>
+            <td>$3563</td>
+            <td class="action" style="color: rgb(0, 153, 255);font-size: 30px;"><i class="fas fa-arrow-circle-right"></i></td>
+          </tr>
+        </tbody>
+        
+      </table>
+      <div class="container-lg">
+        <span>Showing <b>5</b> out of <b>25</b></span>
+        <span style="display: inline-block;padding-left: 900px;">
+          <ul class="pagination" >
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </span>
+       </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
